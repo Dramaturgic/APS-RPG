@@ -82,6 +82,7 @@ public class Main {
 
                 default:
                     System.out.println("Opção inválida!");
+                    coco
             }
 
         } while (opcao != 0);
