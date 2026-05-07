@@ -20,5 +20,3 @@ public class Mago extends Personagem {
         System.out.println("Dano mágico: " + dano);
     }
 }
-
-

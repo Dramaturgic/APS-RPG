@@ -19,6 +19,3 @@ public class Guerreiro extends Personagem {
         System.out.println("Dano causado: " + dano);
     }
 }
-
-
-
