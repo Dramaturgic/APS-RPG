@@ -3,6 +3,8 @@ import java.util.Scanner;
 
 public class Main {
 
+    // Inimigos
+
     public static Inimigo gerarInimiroAleatorio() {
         Random random = new Random();
         int tipo = random.nextInt(3);
@@ -23,6 +25,8 @@ public class Main {
         }
     }
 
+    // Menu de batalha
+    
     public static void batalha(Scanner scanner, Personagem jogador, Inimigo inimigo) {
         int acao;
 
@@ -42,7 +46,9 @@ public class Main {
 
             switch (acao) {
                 case 1:
+                    
                     // Jogador ataca
+                    
                     System.out.println("\n--- Sua vez ---");
                     jogador.atacar(inimigo);
                     delay(1000);
@@ -54,6 +60,7 @@ public class Main {
                     }
 
                     // Inimigo contra-ataca
+                    
                     System.out.println("\n--- Vez do inimigo ---");
                     inimigo.atacar(jogador);
                     delay(1000);
@@ -88,6 +95,8 @@ public class Main {
         } while (acao != 0 && jogador.getPontosDeVida() > 0 && inimigo.getPontosDeVida() > 0);
     }
 
+    // Menu principal
+    
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -110,6 +119,8 @@ public class Main {
 
             switch (opcao) {
 
+                 // Criando personagem com a classe escolhida
+                    
                 case 1:
                     System.out.print("Digite o nome do personagem: ");
                     String nome = scanner.nextLine();
@@ -132,6 +143,9 @@ public class Main {
                             jogador = new Arqueiro(nome, 100, 18, 10);
                             break;
                         case 67:
+
+                        // Classe secreta então não vai aparecer no menu de escolha de classe
+                            
                             jogador = new SixsesSeventh(nome, 6767, 67, 67);
                             System.out.println("...o que foi isso?");
                             break;
