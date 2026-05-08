@@ -107,7 +107,7 @@ public class Main {
         int opcao;
 
         do {
-            System.out.println("\n===== MENU RPG =====");
+            System.out.println("\n===== RPG FODA =====");
             System.out.println("1 - Criar personagem");
             System.out.println("2 - Ver ficha do jogador");
             System.out.println("3 - Batalhar");
