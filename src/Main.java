@@ -106,7 +106,7 @@ public static Inimigo gerarInimiroAleatorio() {
             Scanner scanner = new Scanner(System.in);
 
             Personagem jogador = null;
-            Inimigo inimigo = null;
+            Inimigo inimigo;
 
             int opcao;
 
