@@ -147,7 +147,7 @@ public class Main {
                         // Classe secreta então não vai aparecer no menu de escolha de classe
                             
                             jogador = new SixsesSeventh(nome, 6767, 67, 67);
-                            System.out.println("...o que foi isso?");
+                            System.out.println("Alexa, ligar aura");
                             break;
                         default:
                             System.out.println("Classe inválida!");
