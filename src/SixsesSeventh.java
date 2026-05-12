@@ -18,5 +18,10 @@ public class SixsesSeventh extends Personagem {
         System.out.flush();
 
         System.out.println("FARMOU AURA E DEU " + dano + " DE DANO");
+        
+        if (alvo.getPontosDeVida() <= 0) {
+            try { Thread.sleep(2000); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }
+            System.out.println("FEELS THE AURA!!");
+        }   
     }
 }
