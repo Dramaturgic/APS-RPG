@@ -5,9 +5,9 @@ public static Inimigo gerarInimiroAleatorio() {
     int tipo = random.nextInt(5);
 
     return switch (tipo) {
-        case 0 -> new Goblin("Goblin", 60, 14, 5);
-        case 1 -> new Troll("Troll", 150, 18, 12, 8);
-        case 2 -> new Dragao("Dragão", 200, 30, 10, 0.3);
+        case 0 -> new Goblin("Goblin", 60, 18, 5);
+        case 1 -> new Troll("Troll", 150, 20, 12, 4);
+        case 2 -> new Dragao("Dragão", 200, 25, 10, 0.2);
         case 3 -> new Betinha("Betinha", 0, 0, 0);
         case 4 -> new Esqueleto("Esqueleto", 80, 16, 6);
         default -> new Goblin("Goblin", 60, 14, 5);
@@ -111,7 +111,7 @@ public static Inimigo gerarInimiroAleatorio() {
             int opcao;
 
             do {
-                IO.println("\n===== RPG FODA =====");
+                IO.println("\n======== RPG ========");
                 IO.println("1 - Criar personagem");
                 IO.println("2 - Ver ficha do jogador");
                 IO.println("3 - Batalhar");
@@ -138,13 +138,13 @@ public static Inimigo gerarInimiroAleatorio() {
 
                         switch (classe) {
                             case 1:
-                                jogador = new Guerreiro(nome, 120, 20, 15);
+                                jogador = new Guerreiro(nome, 120, 18, 15);
                                 break;
                             case 2:
                                 jogador = new Mago(nome, 80, 25, 8);
                                 break;
                             case 3:
-                                jogador = new Arqueiro(nome, 100, 18, 10);
+                                jogador = new Arqueiro(nome, 100, 20, 10);
                                 break;
                             case 67:
 

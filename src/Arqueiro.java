@@ -17,7 +17,7 @@ public class Arqueiro extends Personagem {
         }
 
         // 30% de chance de crítico
-        if (random.nextInt(100) < 30) {
+        if (random.nextInt(100) < 31) {
             dano *= 2;
             System.out.println("ATAQUE CRÍTICO!");
         }
