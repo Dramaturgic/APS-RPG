@@ -18,12 +18,12 @@ public class Dragao extends Inimigo {
         boolean critico = random.nextDouble() < chanceCritico;
         if (critico) {
             dano *= 2;
-            System.out.println(" CRÍTICO! " + this.nome + " soltou fogo em " + alvo.getNome() + "!");
+            IO.println(" CRÍTICO! " + this.nome + " soltou fogo em " + alvo.getNome() + "!");
         } else {
-            System.out.println(this.nome + " atacou " + alvo.getNome() + " com suas garras!");
+            IO.println(this.nome + " atacou " + alvo.getNome() + " com suas garras!");
         }
 
         alvo.setPontosDeVida(alvo.getPontosDeVida() - dano);
-        System.out.println("Dano: " + dano);
+        IO.println("Dano: " + dano);
     }
 }

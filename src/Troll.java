@@ -20,9 +20,9 @@ public class Troll extends Inimigo {
             // Regenera vida após cada ataque
             if (random.nextInt(100) < 51) {
                 this.setPontosDeVida(this.getPontosDeVida() + regeneracao);
-                System.out.println("Troll regenerou " + regeneracao + " HP");
+                IO.println("Troll regenerou " + regeneracao + " HP");
             }
-            System.out.println(this.nome + " esmagou " + alvo.getNome() + " com seu porrete!");
-            System.out.println("Dano: " + dano);
+            IO.println(this.nome + " esmagou " + alvo.getNome() + " com seu porrete!");
+            IO.println("Dano: " + dano);
     }
 }

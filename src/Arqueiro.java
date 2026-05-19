@@ -19,12 +19,12 @@ public class Arqueiro extends Personagem {
         // 30% de chance de crítico
         if (random.nextInt(100) < 31) {
             dano *= 2;
-            System.out.println("ATAQUE CRÍTICO!");
+            IO.println("ATAQUE CRÍTICO!");
         }
 
         alvo.setPontosDeVida(alvo.getPontosDeVida() - dano);
 
-        System.out.println(this.nome + " disparou uma flecha em " + alvo.getNome());
-        System.out.println("Dano causado: " + dano);
+        IO.println(this.nome + " disparou uma flecha em " + alvo.getNome());
+        IO.println("Dano causado: " + dano);
     }
 }

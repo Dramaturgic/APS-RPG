@@ -15,7 +15,7 @@ public class Guerreiro extends Personagem {
 
         alvo.setPontosDeVida(alvo.getPontosDeVida() - dano);
 
-        System.out.println(this.nome + " desferiu um golpe de espada em " + alvo.getNome());
-        System.out.println("Dano causado: " + dano);
+        IO.println(this.nome + " desferiu um golpe de espada em " + alvo.getNome());
+        IO.println("Dano causado: " + dano);
     }
 }

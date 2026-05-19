@@ -14,14 +14,14 @@ public class SixsesSeventh extends Personagem {
         alvo.setPontosDeVida(alvo.getPontosDeVida() - dano);
 
         // Limpa a tela
-        System.out.print("\033[H\033[2J");
+        IO.print("\033[H\033[2J");
         System.out.flush();
 
-        System.out.println("FARMOU AURA E DEU " + dano + " DE DANO");
+        IO.println("FARMOU AURA E DEU " + dano + " DE DANO");
         
         if (alvo.getPontosDeVida() <= 0) {
             try { Thread.sleep(2000); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }
-            System.out.println("FEELS THE AURA!!");
+            IO.println("FEELS THE AURA!!");
         }   
     }
 }

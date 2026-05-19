@@ -1,6 +1,8 @@
+// Precisa ter o JAVA 25 ou superior para executar
+
 // Inimigos
 
-public static Inimigo gerarInimiroAleatorio() {
+public static Inimigo gerarInimigoAleatorio() {
     Random random = new Random();
     int tipo = random.nextInt(5);
 
@@ -177,7 +179,7 @@ public static Inimigo gerarInimiroAleatorio() {
                         } else if (jogador.getPontosDeVida() <= 0) {
                             IO.println("Seu personagem está morto! Crie um novo personagem.");
                         } else {
-                            inimigo = gerarInimiroAleatorio();
+                            inimigo = gerarInimigoAleatorio();
                             IO.println("Um " + inimigo.getNome() + " apareceu!");
                             if (inimigo instanceof Betinha) {
                                 IO.println(((Betinha) inimigo).getIntroducao());

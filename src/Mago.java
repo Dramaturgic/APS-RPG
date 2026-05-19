@@ -16,7 +16,7 @@ public class Mago extends Personagem {
 
         alvo.setPontosDeVida(alvo.getPontosDeVida() - dano);
 
-        System.out.println(this.nome + " lançou uma magia em " + alvo.getNome());
-        System.out.println("Dano mágico: " + dano);
+        IO.println(this.nome + " lançou uma magia em " + alvo.getNome());
+        IO.println("Dano mágico: " + dano);
     }
 }

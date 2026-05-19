@@ -11,17 +11,17 @@ public class Inimigo extends Personagem {
         int dano = this.ataque - alvo.getDefesa();
         if (dano < 0) dano = 0;
         alvo.setPontosDeVida(alvo.getPontosDeVida() - dano);
-        System.out.println(this.nome + " atacou " + alvo.getNome() + " causando " + dano + " de dano.");
+        IO.println(this.nome + " atacou " + alvo.getNome() + " causando " + dano + " de dano.");
     }
 
     // Exibir ficha
     @Override
     public void exibirFicha() {
-        System.out.println("===== FICHA DO INIMIGO =====");
-        System.out.println("Nome: " + nome);
-        System.out.println("Vida: " + pontosDeVida);
-        System.out.println("Ataque: " + ataque);
-        System.out.println("Defesa: " + defesa);
-        System.out.println("============================");
+        IO.println("===== FICHA DO INIMIGO =====");
+        IO.println("Nome: " + nome);
+        IO.println("Vida: " + pontosDeVida);
+        IO.println("Ataque: " + ataque);
+        IO.println("Defesa: " + defesa);
+        IO.println("============================");
     }
 }

@@ -62,17 +62,17 @@ public class Personagem {
 
         alvo.setPontosDeVida(alvo.getPontosDeVida() - dano);
 
-        System.out.println(this.nome + " atacou " + alvo.nome + " causando " + dano + " de dano.");
+        IO.println(this.nome + " atacou " + alvo.nome + " causando " + dano + " de dano.");
     }
 
     // Exibir ficha
     public void exibirFicha() {
-        System.out.println("===== FICHA DO PERSONAGEM =====");
-        System.out.println("Nome: " + nome);
-        System.out.println("Vida: " + pontosDeVida);
-        System.out.println("Ataque: " + ataque);
-        System.out.println("Defesa: " + defesa);
-        System.out.println("================================");
+        IO.println("===== FICHA DO PERSONAGEM =====");
+        IO.println("Nome: " + nome);
+        IO.println("Vida: " + pontosDeVida);
+        IO.println("Ataque: " + ataque);
+        IO.println("Defesa: " + defesa);
+        IO.println("================================");
     }
 }
 

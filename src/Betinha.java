@@ -46,11 +46,11 @@ public class Betinha extends Inimigo {
 
         if (golpesSofridos >= GOLPES_PARA_DERROTAR) {
             super.setPontosDeVida(0);
-            System.out.println("Betinha foi moggado, no final não sobrou nada.");
-            System.out.println("Brutal.");
+            IO.println("Betinha foi moggado, no final não sobrou nada.");
+            IO.println("Brutal.");
         } else {
-            System.out.println("Betinha recebeu um golpe! (" + golpesSofridos + "/" + GOLPES_PARA_DERROTAR + " golpes)");
-            System.out.println("Ainda precisa de " + golpesRestantes + " golpes para ser derrotado.");
+            IO.println("Betinha recebeu um golpe! (" + golpesSofridos + "/" + GOLPES_PARA_DERROTAR + " golpes)");
+            IO.println("Ainda precisa de " + golpesRestantes + " golpes para ser derrotado.");
         }
     }
 
@@ -60,20 +60,20 @@ public class Betinha extends Inimigo {
 
         if (random.nextDouble() < CHANCE_ATAQUE) {
             alvo.setPontosDeVida(alvo.getPontosDeVida() - DANO_ATAQUE);
-            System.out.println("Betinha te olhou de um jeito estranho...");
-            System.out.println("Dano: " + DANO_ATAQUE);
+            IO.println("Betinha te olhou de um jeito estranho...");
+            IO.println("Dano: " + DANO_ATAQUE);
         } else {
-            System.out.println("Betinha não fez nada.");
+            IO.println("Betinha não fez nada.");
         }
     }
 
     @Override
     public void exibirFicha() {
-        System.out.println("===== FICHA DO INIMIGO =====");
-        System.out.println("Nome: Betinha");
-        System.out.println("Golpes sofridos: " + golpesSofridos + "/" + GOLPES_PARA_DERROTAR);
-        System.out.println("Chance de ataque: 9%");
-        System.out.println("Dano: " + DANO_ATAQUE);
-        System.out.println("============================");
+        IO.println("===== FICHA DO INIMIGO =====");
+        IO.println("Nome: Betinha");
+        IO.println("Golpes sofridos: " + golpesSofridos + "/" + GOLPES_PARA_DERROTAR);
+        IO.println("Chance de ataque: 9%");
+        IO.println("Dano: " + DANO_ATAQUE);
+        IO.println("============================");
     }
 }

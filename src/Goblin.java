@@ -10,8 +10,8 @@ public class Goblin extends Inimigo {
             int dano = (this.ataque) - alvo.getDefesa();
             if (dano < 0) dano = 0;
             alvo.setPontosDeVida(alvo.getPontosDeVida() - dano);
-            System.out.println(this.nome + " deu uma rasteira rápida! (Golpe " + i + ")");
-            System.out.println("Dano: " + dano);
+            IO.println(this.nome + " deu uma rasteira rápida! (Golpe " + i + ")");
+            IO.println("Dano: " + dano);
         }
     }
 }
