@@ -27,7 +27,7 @@ public static Inimigo gerarInimigoAleatorio() {
         // Menu de batalha
 
         public static void batalha(Scanner scanner, Personagem jogador, Inimigo inimigo) {
-            int acao;
+            int acao = -1;
 
             do {
                 IO.println("\n===== BATALHA =====");
@@ -114,7 +114,7 @@ public static Inimigo gerarInimigoAleatorio() {
             Personagem jogador = null;
             Inimigo inimigo;
 
-            int opcao;
+            int opcao = -1;
 
             do {
                 IO.println("\n======== RPG ========");
