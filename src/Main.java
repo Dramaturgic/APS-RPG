@@ -369,8 +369,8 @@ void main() {
                 scanner.nextLine();
 
                 switch (classe) {
-                    case 1 -> jogador = new Guerreiro(nome, 120, 18, 15);
-                    case 2 -> jogador = new Mago(nome, 80, 25, 8);
+                    case 1 -> jogador = new Guerreiro(nome, 120, 15, 15);
+                    case 2 -> jogador = new Mago(nome, 80, 15, 8);
                     case 3 -> jogador = new Arqueiro(nome, 100, 20, 10);
                     case 67 -> {
                         jogador = new SixsesSeventh(nome, 6767, 67, 67);
