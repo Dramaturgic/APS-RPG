@@ -46,6 +46,7 @@ public static Inimigo gerarInimigoAleatorio() {
 
                 if (scanner.hasNextInt()) {
                     acao = scanner.nextInt();
+                    scanner.nextLine();
                 } else {
                     IO.println("Digite um número");
                     scanner.nextLine();
@@ -126,6 +127,7 @@ public static Inimigo gerarInimigoAleatorio() {
 
                 if (scanner.hasNextInt()) {
                     opcao = scanner.nextInt();
+                    scanner.nextLine();
                 } else {
                     IO.println("Digite um número");
                     scanner.nextLine();
@@ -146,6 +148,7 @@ public static Inimigo gerarInimigoAleatorio() {
                         IO.println("3 - Arqueiro");
                         IO.print("Opção: ");
                         int classe = scanner.nextInt();
+                        scanner.nextLine();
 
                         switch (classe) {
                             case 1:
