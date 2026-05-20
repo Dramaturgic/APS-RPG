@@ -44,9 +44,13 @@ public static Inimigo gerarInimigoAleatorio() {
                 IO.println("0 - Fugir");
                 IO.print("Escolha: ");
 
-                acao = scanner.nextInt();
-                scanner.nextLine();
-
+                if (scanner.hasNextInt()) {
+                    acao = scanner.nextInt();
+                } else {
+                    IO.println("Digite um número");
+                    scanner.nextLine();
+                    continue;
+                }
                 switch (acao) {
                     case 1:
 
@@ -120,8 +124,13 @@ public static Inimigo gerarInimigoAleatorio() {
                 IO.println("0 - Sair");
                 IO.print("Escolha: ");
 
-                opcao = scanner.nextInt();
-                scanner.nextLine();
+                if (scanner.hasNextInt()) {
+                    opcao = scanner.nextInt();
+                } else {
+                    IO.println("Digite um número");
+                    scanner.nextLine();
+                    continue;
+                }
 
                 switch (opcao) {
 
