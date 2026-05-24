@@ -1,4 +1,4 @@
-# ⚔️ APS-RPG 67
+# ⚔️ APS-RPG
 
 Um jogo de RPG por turnos feito em Java, desenvolvido como projeto acadêmico para o curso de Ciência da Computação.
 
